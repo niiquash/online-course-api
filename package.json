@@ -1,0 +1,30 @@
+{
+  "name": "online-course-api",
+  "version": "1.0.0",
+  "description": "Provides consumers with a list of online courses and the details for each course",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niiquash/online-course-api.git"
+  },
+  "author": "Ammon Quarshie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niiquash/online-course-api/issues"
+  },
+  "homepage": "https://github.com/niiquash/online-course-api#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^6.6.5"
+  }
+}
