@@ -7,6 +7,7 @@ const getCourseDetails = async (req, res) => {
     res.status(200).json(details);
 }
 
+// Get single course
 const getSingleCourse = async (req, res) => {
     try {
         const details = await CourseDetails.findById(req.params.id);

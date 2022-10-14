@@ -1,6 +1,6 @@
 const Instructors = require('../models/courseInstructors');
 
-// Get courses
+// Get all Instructors
 const getCourseInstructors = async (req, res) => {
     try {
         const instructors = await Instructors.find();
@@ -11,6 +11,7 @@ const getCourseInstructors = async (req, res) => {
     }
 }
 
+// Get single instructor
 const getSingleInstructor = async (req, res) => {
     try {
         const instructor = await Instructors.findById(req.params.id);

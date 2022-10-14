@@ -1,0 +1,13 @@
+[
+    {
+        "username": "KF_Panda",
+        "userPasssword": "ohlookitssuperman",
+        "firstName": "Keanu",
+        "lastName": "Reeves",
+        "savedCourses": [
+            "ReactJS",
+            "React Native"
+        ],
+        "favoriteCourses": "ReactJS"
+    }
+]
