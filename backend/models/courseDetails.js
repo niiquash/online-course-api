@@ -34,3 +34,5 @@ const courseDetailsSchema = new mongoose.Schema({
         required: true
     },
 })
+
+module.exports = mongoose.model('details', courseDetailsSchema);
