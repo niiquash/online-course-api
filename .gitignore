@@ -3,3 +3,4 @@ node_modules
 courses.json
 courseInstructors.json
 courseDetails.json
+courseUser.json

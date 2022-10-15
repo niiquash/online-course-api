@@ -4,8 +4,9 @@
   "description": "Provides consumers with a list of online courses and the details for each course",
   "main": "server.js",
   "scripts": {
-    "start": "node backend/server.js",
-    "server": "nodemon backend/server.js"
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "swagger-autogen": "node swagger.js"
   },
   "repository": {
     "type": "git",
@@ -18,13 +19,15 @@
   },
   "homepage": "https://github.com/niiquash/online-course-api#readme",
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "swagger-autogen": "^2.22.0"
   },
   "dependencies": {
     "colors": "^1.4.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
-    "mongoose": "^6.6.5"
+    "mongoose": "^6.6.5",
+    "swagger-ui-express": "^4.5.0"
   }
 }

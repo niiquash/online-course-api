@@ -36,7 +36,7 @@ const createUser = async (req, res) => {
     try {
         const savedUser = await user.save();
         // DISPLAY NEW CONTACT
-        return res.json(savedUser._id);
+        return res.status(201).json(savedUser._id);
     } catch (e) {
         res.json({ message: e.message })
     }
