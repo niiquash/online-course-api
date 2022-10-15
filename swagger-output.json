@@ -5,7 +5,7 @@
     "description": "This API allows users to access courses and course instructors, and save courses.",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "ammonquarshie-onlinecourseapi.onrender.com",
   "basePath": "/",
   "schemes": [
     "http"

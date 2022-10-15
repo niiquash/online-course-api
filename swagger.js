@@ -5,7 +5,7 @@ const doc = {
         title: 'Online Courses API',
         description: 'This API allows users to access courses and course instructors, and save courses.',
     },
-    host: 'localhost:8080',
+    host: 'ammonquarshie-onlinecourseapi.onrender.com',
     schemes: ['http'],
 };
 
@@ -17,4 +17,4 @@ const endpointsFiles = [
     './routes/courseUsers.js'
 ];
 
-swaggerAutogen(outputFile, endpointsFiles, doc);
+// swaggerAutogen(outputFile, endpointsFiles, doc);
