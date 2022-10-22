@@ -2,9 +2,14 @@ const CourseDetails = require('../models/courseDetails');
 
 // Get courses
 const getCourseDetails = async (req, res) => {
-    const details = await CourseDetails.find({});
-    console.log(details);
-    res.status(200).json(details);
+    try {
+        const details = await CourseDetails.find({});
+        console.log(details);
+        res.status(200).json(details);
+    } catch (e) {
+        res.status(500).json({ message: e.message });
+    }
+
 }
 
 // Get single course

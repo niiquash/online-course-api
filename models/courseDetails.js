@@ -33,6 +33,10 @@ const courseDetailsSchema = new mongoose.Schema({
         type: Array,
         required: true
     },
+    courseLength: {
+        type: String,
+        required: true
+    }
 })
 
 module.exports = mongoose.model('details', courseDetailsSchema);

@@ -1,0 +1,131 @@
+// Localhost routes
+
+// Courses collection
+// Get courses
+GET http://localhost:8080/courses
+###
+
+// Get single course
+GET http://localhost:8080/courses/63475b5e0fb5a41682d4c457
+###
+
+// Details collection
+// Get course details
+GET http://localhost:8080/courseDetails
+###
+
+// Get single course
+GET http://localhost:8080/courseDetails/6348c54dd44ae7e8fe03e47c
+###
+
+// Instructors collection
+// Get instructors
+GET http://localhost:8080/courseInstructors
+###
+
+// Get single instructor
+GET http://localhost:8080/courseInstructors/6348c55ed44ae7e8fe03e482
+###
+
+// Users collection
+// Get users
+GET http://localhost:8080/courseUsers
+###
+
+// Get single user
+GET http://localhost:8080/courseUsers/6348f7048e5ace8c039740c7
+###
+
+// Create new user
+POST http://localhost:8080/courseUsers/
+content-type: application/json
+
+{
+    "username": "",
+    "userPassword": "",
+    "firstName": "",
+    "lastName": "",
+    "savedCourses": [],
+    "favoriteCourses": []
+}
+###
+
+// Update single user
+PUT http://localhost:8080/courseUsers/634ad45d6c15563f1f280975
+content-type: application/json
+
+{
+	"savedCourses": [],
+    "favoriteCourses": []
+}
+###
+
+// Delete users
+DELETE  http://localhost:8080/courseUsers/634ad45d6c15563f1f280975
+###
+
+// Render routes
+
+// Course collection
+// Get courses
+GET https://ammonquarshie-onlinecourseapi.onrender.com/courses
+###
+
+// Get single course
+GET https://ammonquarshie-onlinecourseapi.onrender.com/courses/63475b5e0fb5a41682d4c457
+###
+
+// Details collection
+// Get course details
+GET https://ammonquarshie-onlinecourseapi.onrender.com/courseDetails
+###
+
+// Get single course
+GET https://ammonquarshie-onlinecourseapi.onrender.com/6348c54dd44ae7e8fe03e47c
+###
+
+// Instructors collection
+// Get instructors
+GET https://ammonquarshie-onlinecourseapi.onrender.com/courseInstructors
+###
+
+// Get single instructor
+GET https://ammonquarshie-onlinecourseapi.onrender.com/courseInstructors/6348c55ed44ae7e8fe03e482
+###
+
+// Users collection
+// Get users
+GET https://ammonquarshie-onlinecourseapi.onrender.com/courseUsers
+###
+
+// Get single user
+GET https://ammonquarshie-onlinecourseapi.onrender.com/courseUsers/6348f7048e5ace8c039740c7
+###
+
+// Create new user
+POST https://ammonquarshie-onlinecourseapi.onrender.com/courseUsers/
+content-type: application/json
+
+{
+    "username": "",
+    "userPassword": "",
+    "firstName": "",
+    "lastName": "",
+    "savedCourses": [],
+    "favoriteCourses": []
+}
+###
+
+// Update single user
+PUT https://ammonquarshie-onlinecourseapi.onrender.com/courseUsers/
+content-type: application/json
+
+{
+	"savedCourses": [],
+    "favoriteCourses": []
+}
+###
+
+// Delete users
+DELETE  https://ammonquarshie-onlinecourseapi.onrender.com/courseUsers/
+###
