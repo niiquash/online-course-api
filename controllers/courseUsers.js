@@ -38,7 +38,7 @@ const createUser = async (req, res) => {
         // DISPLAY NEW CONTACT
         return res.status(201).json(savedUser._id);
     } catch (e) {
-        res.json({ message: e.message })
+        res.status(500).json({ message: e.message })
     }
 };
 
