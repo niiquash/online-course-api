@@ -6,5 +6,6 @@ router
     .use('/courseInstructors', require('./courseInstructors'))
     .use('/courseDetails', require('./courseDetails'))
     .use('/courseUsers', require('./courseUsers'))
+    .use('/authorization', require('./authorization'))
 
 module.exports = router;
