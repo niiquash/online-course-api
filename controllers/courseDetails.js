@@ -3,7 +3,7 @@ const CourseDetails = require('../models/courseDetails');
 // Get courses
 const getCourseDetails = async (req, res) => {
     try {
-        const details = await CourseDetails.find({});
+        const details = await CourseDetails.find();
         console.log(details);
         res.status(200).json(details);
     } catch (e) {

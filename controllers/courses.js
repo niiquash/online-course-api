@@ -2,6 +2,9 @@ const Courses = require('../models/courses');
 
 // Get courses
 const getCourses = async (req, res) => {
+    //    if (!req.user) {
+    //         return res.status(401).send({ message: 'Not Authenticated' })
+    //     } 
     try {
         const courses = await Courses.find();
         res.status(200).json(courses);
