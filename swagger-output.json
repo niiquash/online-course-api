@@ -5,7 +5,7 @@
     "description": "This API allows users to access courses and course instructors, and save courses.",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "ammonquarshie-onlinecourseapi.onrender.com",
   "basePath": "/",
   "schemes": [
     "http",
@@ -14,7 +14,7 @@
   "paths": {
     "/courses/": {
       "get": {
-        "description": "",
+        "description": "Get all courses",
         "parameters": [],
         "responses": {
           "200": {
@@ -29,7 +29,7 @@
         }
       },
       "post": {
-        "description": "",
+        "description": "Create new courses",
         "parameters": [
           {
             "name": "body",
@@ -59,7 +59,7 @@
     },
     "/courses/{id}": {
       "get": {
-        "description": "",
+        "description": "Get one course",
         "parameters": [
           {
             "name": "id",
@@ -81,7 +81,7 @@
         }
       },
       "put": {
-        "description": "",
+        "description": "Update one course",
         "parameters": [
           {
             "name": "id",
@@ -103,7 +103,7 @@
         }
       },
       "delete": {
-        "description": "",
+        "description": "Delete one course",
         "parameters": [
           {
             "name": "id",
@@ -127,7 +127,7 @@
     },
     "/courseInstructors/": {
       "get": {
-        "description": "",
+        "description": "Get all instructors",
         "parameters": [],
         "responses": {
           "200": {
@@ -139,7 +139,7 @@
         }
       },
       "post": {
-        "description": "",
+        "description": "Add one instructor",
         "parameters": [
           {
             "name": "body",
@@ -178,7 +178,7 @@
     },
     "/courseInstructors/{id}": {
       "get": {
-        "description": "",
+        "description": "Get one instructor",
         "parameters": [
           {
             "name": "id",
@@ -200,7 +200,7 @@
         }
       },
       "put": {
-        "description": "",
+        "description": "Update one instructor",
         "parameters": [
           {
             "name": "id",
@@ -222,7 +222,7 @@
         }
       },
       "delete": {
-        "description": "",
+        "description": "Delete one instructor",
         "parameters": [
           {
             "name": "id",
@@ -246,7 +246,7 @@
     },
     "/courseDetails/": {
       "get": {
-        "description": "",
+        "description": "Get all course details",
         "parameters": [],
         "responses": {
           "200": {
@@ -258,7 +258,7 @@
         }
       },
       "post": {
-        "description": "",
+        "description": "Add new detail",
         "parameters": [
           {
             "name": "body",
@@ -309,7 +309,7 @@
     },
     "/courseDetails/{id}": {
       "get": {
-        "description": "",
+        "description": "Get details for one course",
         "parameters": [
           {
             "name": "id",
@@ -331,7 +331,7 @@
         }
       },
       "put": {
-        "description": "",
+        "description": "Update details for one course",
         "parameters": [
           {
             "name": "id",
@@ -353,7 +353,7 @@
         }
       },
       "delete": {
-        "description": "",
+        "description": "Delete details of one course",
         "parameters": [
           {
             "name": "id",
@@ -377,14 +377,14 @@
     },
     "/authorization/login": {
       "get": {
-        "description": "",
+        "description": "Login user",
         "parameters": [],
         "responses": {}
       }
     },
     "/authorization/callback": {
       "get": {
-        "description": "",
+        "description": "Receive code",
         "parameters": [
           {
             "name": "code",
