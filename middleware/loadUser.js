@@ -6,7 +6,7 @@ const loadUser = async (req, res, next) => {
         const user = await findOrCreateUser(authZeroUser);
         req.user = user;
         next();
-    } catch (_error) {
+    } catch (e) {
         next()
     }
 }
