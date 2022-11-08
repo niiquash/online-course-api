@@ -2,10 +2,13 @@ const appConfig = require('../config/app')
 const User = require('../models/courseUsers');
 
 const loadUser = async (req, res, next) => {
-    const authZeroUser = await fetchAuthZeroUser(req.headers.authorization);
-    const user = await findOrCreateUser(authZeroUser);
-    req.user = user;
-    next();
+    try {
+        const user = await findOrCreateUser(authZeroUser);
+        req.user = user;
+        next();
+    } catch (_error) {
+        next()
+    }
 }
 
 const fetchAuthZeroUser = async (authorizationValue) => {
