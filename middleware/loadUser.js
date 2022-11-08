@@ -3,10 +3,11 @@ const User = require('../models/courseUsers');
 
 const loadUser = async (req, res, next) => {
     try {
+        const authZeroUser = await fetchAuthZeroUser(req.headers.authorization);
         const user = await findOrCreateUser(authZeroUser);
         req.user = user;
         next();
-    } catch (e) {
+    } catch (_error) {
         next()
     }
 }
