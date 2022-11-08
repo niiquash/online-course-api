@@ -18,7 +18,7 @@ const getCourses = async (req, res) => {
 // @route   GET /courses/:id
 const getSingleCourse = async (req, res) => {
     try {
-        const course = await Courses.findById(req.params.id);
+        const course = await Courses.model.findById(req.params.id);
         if (course == null) {
             return res.status(404).json({ message: "Course with specified ID Not Found!" })
         }
@@ -32,7 +32,7 @@ const getSingleCourse = async (req, res) => {
 // @route   POST /courses
 const addCourse = async (req, res) => {
     try {
-        const course = new Courses({
+        const course = new Courses.model({
             courseName: req.body.courseName,
             courseLength: req.body.courseLength
         })
@@ -48,7 +48,7 @@ const addCourse = async (req, res) => {
 const updateCourse = async (req, res) => {
     try {
         const id = req.params.id;
-        const course = await Courses.findByIdAndUpdate(id, req.body, { useFindAndModify: false });
+        const course = await Courses.model.findByIdAndUpdate(id, req.body, { useFindAndModify: false });
         if (!course) {
             return res.status(404).send({ message: `Cannot update course with id=${id}` });
         } else {
@@ -64,7 +64,7 @@ const updateCourse = async (req, res) => {
 const deleteCourse = async (req, res) => {
     try {
         const id = req.params.id;
-        const removedCourse = await Courses.findByIdAndRemove(id);
+        const removedCourse = await Courses.model.findByIdAndRemove(id);
         if (!removedCourse) {
             res.status(404).send({ message: `Cannot delete course with id=${id}` });
         } else {
