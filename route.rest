@@ -9,6 +9,29 @@ GET http://localhost:8080/courses
 GET http://localhost:8080/courses/63475b5e0fb5a41682d4c457
 ###
 
+// Create new course
+POST http://localhost:8080/courses/
+content-type: application/json
+
+{
+    "courseName": "Something",
+    "courseDuration": "5 hours"
+}
+###
+
+// Update course
+PUT http://localhost:8080/courses/63475b5e0fb5a41682d4c457
+content-type: application/json
+
+{
+	"courseName": "Anything",
+}
+###
+
+// Delete course
+DELETE http://localhost:8080/courses/63475b5e0fb5a41682d4c457
+###
+
 // Details collection
 // Get course details
 GET http://localhost:8080/courseDetails
@@ -16,6 +39,35 @@ GET http://localhost:8080/courseDetails
 
 // Get single course
 GET http://localhost:8080/courseDetails/6348c54dd44ae7e8fe03e47c
+###
+
+// Create details
+POST http://localhost:8080/courseDetails
+Content-Type: application/json
+
+{
+    "courseName": "a",
+    "courseDuration": "",
+    "courseDescrition": "",
+    "coursePrice": "",
+    "courseInstructor": "",
+    "courseRating": "",
+    "courseTopics": [],
+    "courseRelatedArticles": [],
+}
+###
+
+// Update details
+PUT http://localhost:8080/courseDetails/6348c54dd44ae7e8fe03e47c
+Content-Type: application/json
+
+{
+    "courseName": "HAHA",
+}
+###
+
+// Delete details
+DELETE http://localhost:8080/courseDetails/6348c54dd44ae7e8fe03e47c
 ###
 
 // Instructors collection

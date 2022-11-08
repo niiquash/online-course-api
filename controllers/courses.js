@@ -34,7 +34,7 @@ const addCourse = async (req, res) => {
     try {
         const course = new Courses.model({
             courseName: req.body.courseName,
-            courseLength: req.body.courseLength
+            courseDuration: req.body.courseDuration
         })
         const savedCourse = await course.save();
         return res.status(201).json(savedCourse._id);
